@@ -1,0 +1,43 @@
+@font-face {
+    font-family: myFont;
+    src: url(myFont.ttf);
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: 100%;
+    margin: 0px;
+    font-family: myFont, Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: row;
+}
+
+a {
+    color: #ffffff;
+}
+
+.left {
+    left: 2%;
+}
+.right {
+    right: 2%;
+}
+.top {
+    top: 2%;
+}
+.bottom {
+    bottom: 2%;
+}
+
+div.button {
+    position: fixed;
+    background-image: url("buttonBlack.png");
+    background-size: 100%;
+    background-position: center;
+    padding: 3%;
+    font-size: 2vw;
+}
+div.button:hover {
+    background-image: url("buttonYellow.png");
+    color: #000000;
+    transition: 0.2s;
+}
