@@ -7,17 +7,14 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <img src="bg-low.jpg" id="bgimg">
     <a href="music"><div class="button top left">Music</div></a>
     <a href="music"><div class="button top right">Video</div></a>
     <a href="music"><div class="button bottom left">Shop</div></a>
     <a href="music"><div class="button bottom right">Contact</div></a>
-
-    <script>
-        var dlimg = new Image();
-        dlimg.onload = function() {
-            document.getElementById("bgimg").src = dlimg.src;
-        };
-        dlimg.src = "bg.jpg";
-    </script>
+    <div class="icon-wrapper">
+        <a href="https://twitter.com/OfficialPooka" target="_blank"><img src="twitter.png" class="icon"></a>
+        <a href="https://www.youtube.com/user/JZDaddy" target="_blank"><img src="youtube.png" class="icon"></a>
+        <a href="https://soundcloud.com/stream" target="_blank"><img src="soundcloud.png" class="icon"></a>
+        <a href="https://pooka.bandcamp.com/" target="_blank"><img src="bandcamp.png" class="icon"></a>
+    </div>
 </body>

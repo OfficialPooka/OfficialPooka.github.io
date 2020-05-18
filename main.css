@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: aqua;
     background-image: url("bg.jpg");
     background-repeat: repeat-y;
     background-size: 100%;
@@ -12,7 +13,7 @@ body {
     flex-direction: row;
 }
 
-img {
+#bgimg {
     width: 100%;
     display: cover;
     z-index: -1;
@@ -47,4 +48,21 @@ div.button:hover {
     background-image: url("buttonYellow.png");
     color: #000000;
     transition: 0.2s;
+}
+div.button:active {
+    background-image: url("buttonYellow.png");
+    color: #000000;
+}
+
+.icon-wrapper {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 2%;
+}
+.icon {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    padding: 0px 12px 0px 12px;
 }
