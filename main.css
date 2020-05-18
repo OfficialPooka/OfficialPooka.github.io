@@ -5,10 +5,17 @@
 
 body {
     background-image: url("bg.jpg");
+    background-repeat: repeat-y;
     background-size: 100%;
     margin: 0px;
     font-family: myFont, Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: row;
+}
+
+img {
+    width: 100%;
+    display: cover;
+    z-index: -1;
 }
 
 a {
