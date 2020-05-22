@@ -1,68 +1,73 @@
 @font-face {
     font-family: myFont;
-    src: url(myFont.ttf);
+    src: url(custom-font.ttf);
 }
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: quicksand;
+    src: url(Quicksand-SemiBold.ttf);
+}
+@font-face {
+    font-family: mono;
+    src: url(IBMPlexMono-Medium.ttf);
+}
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
 
 body {
     background-color: aqua;
-    background-image: url("bg.jpg");
+    background-image: url(color-1080.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
     margin: 0px;
     font-family: myFont, Verdana, Geneva, Tahoma, sans-serif;
-    flex-direction: row;
+}
+@media screen and (min-height: 1440px) {
+    body {
+      background-image: url(color-1440.jpg);
+    }
+}
+@media screen and (min-height: 3840px) {
+    body {
+      background-image: url(color-4k.jpg);
+    }
+}
+@media (max-aspect-ratio: 1/1) {
+    body {
+        background-image: url(color-mobile.jpg);
+    }
 }
 
-#bgimg {
-    width: 100%;
-    display: cover;
-    z-index: -1;
+h1 {
+    font-family: quicksand, sans-serif;
+    font-size: 50px;
+    margin: 40px;
+    color: #ffffff;
+}
+
+p {
+    font-family: mono, monospace;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+div.back-bt {
+    font-family: mono, monospace;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 20px;
 }
 
 a {
     color: #ffffff;
-}
-
-.left {
-    left: 2%;
-}
-.right {
-    right: 2%;
-}
-.top {
-    top: 2%;
-}
-.bottom {
-    bottom: 2%;
-}
-
-div.button {
-    position: fixed;
-    background-image: url("buttonBlack.png");
-    background-size: 100%;
-    background-position: center;
-    padding: 3%;
-    font-size: 2vw;
-}
-div.button:hover {
-    background-image: url("buttonYellow.png");
-    color: #000000;
-    transition: 0.2s;
-}
-div.button:active {
-    background-image: url("buttonYellow.png");
-    color: #000000;
-}
-
-.icon-wrapper {
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    top: 2%;
-}
-.icon {
-    display: inline;
-    width: 40px;
-    height: 40px;
-    padding: 0px 12px 0px 12px;
 }
