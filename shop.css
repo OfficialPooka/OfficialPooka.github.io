@@ -1,0 +1,51 @@
+p.heading {
+    margin: 40px 0px 12px 0px;
+    text-align: center;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+p.desc {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+div.item-row {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+div.item {
+    padding: 10px;
+    display: inline-block;
+}
+img.item-preview {
+    border: 0;
+    width: 500px;
+    height: 500px;
+    transition: 0.7s;
+    margin: 10px;
+}
+img.item-preview:hover {
+    width: 600px;
+    height: 600px;
+}
+
+a.buy-bt {
+    text-shadow: none !important;
+    background-color: #494949 !important;
+    background-image: none !important;
+    border: 0px !important;
+    font-family: myFont !important;
+    border-radius: 0px !important;
+    padding: 10px 23px !important;
+    font-size: 20px !important;
+    transition: 0.1s;
+    margin: 10px;
+}
+a.buy-bt:hover {
+    background-color: #abc0c4 !important;
+}
+a.buy-bt:active {
+    background-color: #abc0c4 !important;
+}

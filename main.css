@@ -1,22 +1,22 @@
 @font-face {
     font-family: myFont;
-    src: url(custom-font.ttf);
+    src: url(assets/fonts/custom-font.ttf);
 }
 @font-face {
     font-family: roboto;
-    src: url(Roboto-Regular.ttf);
+    src: url(assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
     font-family: montserrat;
-    src: url(Montserrat-Regular.ttf);
+    src: url(assets/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
     font-family: quicksand;
-    src: url(Quicksand-SemiBold.ttf);
+    src: url(assets/fonts/Quicksand-SemiBold.ttf);
 }
 @font-face {
     font-family: mono;
-    src: url(IBMPlexMono-Medium.ttf);
+    src: url(assets/fonts/IBMPlexMono-Medium.ttf);
 }
 @keyframes fade {
     from {opacity: 0}
@@ -26,7 +26,7 @@
 
 body {
     background-color: aqua;
-    background-image: url(color-1080.jpg);
+    background-image: url(assets/color-1080.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
     margin: 0px;
@@ -34,23 +34,23 @@ body {
 }
 @media screen and (min-height: 1440px) {
     body {
-      background-image: url(color-1440.jpg);
+      background-image: url(assets/color-1440.jpg);
     }
 }
 @media screen and (min-height: 3840px) {
     body {
-      background-image: url(color-4k.jpg);
+      background-image: url(assets/color-4k.jpg);
     }
 }
 @media (max-aspect-ratio: 1/1) {
     body {
-        background-image: url(color-mobile.jpg);
+        background-image: url(assets/color-mobile.jpg);
     }
 }
 
 h1 {
-    font-family: quicksand, sans-serif;
-    font-size: 50px;
+    font-family: myFont, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
     margin: 40px;
     color: #ffffff;
 }
@@ -63,6 +63,9 @@ p {
 
 div.back-bt {
     font-family: mono, monospace;
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
     font-size: 16px;
     color: #ffffff;
     margin: 20px;

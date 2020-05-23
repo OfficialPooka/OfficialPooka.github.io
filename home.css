@@ -1,21 +1,21 @@
 body {
     background-color: aqua;
-    background-image: url(bg-1080.jpg) !important;
+    background-image: url(assets/bg-1080.jpg) !important;
     flex-direction: row;
 }
 @media screen and (min-height: 1440px) {
     body {
-      background-image: url(bg-1440.jpg) !important;
+      background-image: url(assets/bg-1440.jpg) !important;
     }
 }
 @media screen and (min-height: 3840px) {
     body {
-      background-image: url(bg-4k.jpg) !important;
+      background-image: url(assets/bg-4k.jpg) !important;
     }
 }
 @media (max-aspect-ratio: 1/1) {
     body {
-        background-image: url(bg-mobile.jpg) !important;
+        background-image: url(assets/bg-mobile.jpg) !important;
     }
 }
 
@@ -34,7 +34,7 @@ body {
 
 div.button {
     position: fixed;
-    background-image: url("buttonBlack.png");
+    background-image: url("assets/buttonBlack.png");
     background-size: 100%;
     background-position: center;
     padding: 3%;
@@ -44,12 +44,12 @@ div.button {
     animation-timing-function: ease;
 }
 div.button:hover {
-    background-image: url("buttonYellow.png");
+    background-image: url("assets/buttonYellow.png");
     color: #181818;
     transition: 0.2s;
 }
 div.button:active {
-    background-image: url("buttonYellow.png");
+    background-image: url("assets/buttonYellow.png");
     color: #181818;
 }
 
