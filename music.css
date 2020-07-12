@@ -1,9 +1,6 @@
 p {
     margin: 40px 0px 12px 0px;
     text-align: center;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-timing-function: ease;
 }
 
 div.album-row {
@@ -11,7 +8,7 @@ div.album-row {
     height: auto;
     text-align: center;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease;
 }
 div.album {

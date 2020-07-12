@@ -39,18 +39,11 @@ div.button {
     background-position: center;
     padding: 3%;
     font-size: 2vw;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-timing-function: ease;
 }
 div.button:hover {
     background-image: url("assets/buttonYellow.png");
     color: #181818;
     transition: 0.2s;
-}
-div.button:active {
-    background-image: url("assets/buttonYellow.png");
-    color: #181818;
 }
 
 .icon-wrapper {
@@ -59,7 +52,7 @@ div.button:active {
     position: fixed;
     top: 3%;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease;
 }
 .icon {

@@ -1,10 +1,8 @@
 p.heading {
     margin: 40px 0px 12px 0px;
     text-align: center;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-timing-function: ease;
 }
+
 p.desc {
     margin: 0px 0px 0px 0px;
     text-align: center;
@@ -14,21 +12,51 @@ div.item-row {
     width: 100%;
     height: auto;
     text-align: center;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
+
 div.item {
     padding: 10px;
     display: inline-block;
 }
+
 img.item-preview {
     border: 0;
-    width: 500px;
-    height: 500px;
-    transition: 0.7s;
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 0.3s ease;
+}
+
+img.cover {
+    z-index: 2;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.35)
+}
+
+img.flp {
+    z-index: 1;
+}
+
+/* img.item-preview:hover {
+    width: 370px;
+    height: 370px;
+} */
+
+div.image-holder {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
     margin: 10px;
 }
-img.item-preview:hover {
-    width: 600px;
-    height: 600px;
+
+div.image-holder:hover img.cover {
+    left: -220px;
 }
 
 a.buy-bt {
@@ -43,9 +71,7 @@ a.buy-bt {
     transition: 0.1s;
     margin: 10px;
 }
+
 a.buy-bt:hover {
-    background-color: #abc0c4 !important;
-}
-a.buy-bt:active {
-    background-color: #abc0c4 !important;
+    background-color: #afafaf !important;
 }
