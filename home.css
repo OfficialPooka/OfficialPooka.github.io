@@ -39,6 +39,7 @@ div.button {
     background-position: center;
     padding: 3%;
     font-size: 2vw;
+    z-index: 1;
 }
 div.button:hover {
     background-image: url("assets/buttonYellow.png");
@@ -54,10 +55,13 @@ div.button:hover {
     animation-name: fade;
     animation-duration: 1s;
     animation-timing-function: ease;
+    z-index: 0;
 }
+
 .icon {
     display: inline;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding: 0px 12px 0px 12px;
+    z-index: 2;
 }
