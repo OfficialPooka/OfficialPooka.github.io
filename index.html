@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>POOKA</title>
+<style>
+    body { 
+        background-image:
+        /* oh hellll nawwwl 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
+        height: 100px;
+        too lazy to relearn ts */
+        url('background.jpg');
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+    .container {
+        position: absolute;
+        top: 13%;
+        width: 100%;
+        text-align: center;
+    }
+    #logo-container {
+        width: 200px;
+        height: 200px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgba(151, 73, 73, 0.5); */
+    }
+    #logo {
+        width: 200px;
+        height: 200px;
+        transition: 0.2s ease;
+        user-select: none;
+    }
+    #logo-container:hover #logo {
+        width: 300px;
+        height: 300px;
+    }
+    p {
+        margin: 60px;
+        font-size: 20px;
+    }
+    a {
+        color: white !important;
+        margin: 10px;
+        transition: 0.2s ease;
+        text-decoration: none;
+    }
+    a:hover {
+        text-shadow: 0px 0px 10px white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="logo-container">
+            <img id="logo" src="logo.png">
+        </div>
+        <p>
+            <a href="about.html" title="Pooka's About Page">about</a> &#x2022 
+            <a href="https://linktr.ee/okpooka" target="_blank" title="Pooka's Linktree">links</a> &#x2022 
+            <a href="https://www.beatstars.com/okpooka" target="_blank" title="Shop Pooka's Beats and Kits">shop</a> &#x2022 
+            <a href="portfolio.html" title="Pooka's Portfolio">portfolio</a>
+        </p>
+    </div>
+</body>
+</html>
