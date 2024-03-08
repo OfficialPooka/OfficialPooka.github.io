@@ -25,55 +25,51 @@
     </div>
 
 
-    <div id="title">
-        pooka !
-    </div>
-    <div id="title-bg">
-    </div>
-    <div id="enter">enter</div>
-    <div id="enter-fx"></div>
-    <div id="header">
-        <table>
-            <tr>
-                <td>
-                    <div id="page-label-container">
-                        main menu
-                        <div id="page-label"></div>
-                    </div>
-                </td>
-                <td>
-                    <div id="clock">
-                        <div id="face"></div>
-                        <div id="face-center"></div>
-                        <div id="hour"></div>
-                        <div id="minute"></div>
-                    </div>
-                    <div id="time"></div>
-                </td>
-                <a href="info.html">
+    <div id="overflow-wrapper">
+        <div id="title">pooka !</div>
+        <div id="title-bg"></div>
+        <div id="enter">enter</div>
+        <div id="enter-fx"></div>
+        <div id="header">
+            <table>
+                <tr>
                     <td>
-                        <img src="info.png">
-                        <br>
-                        <p>about</p>
+                        <div id="page-label-container">
+                            main menu
+                            <div id="page-label"></div>
+                        </div>
                     </td>
-                </a>
-            </tr>
-        </table>
-    </div>
-    <!-- <div id="navbar">
-        <table class="buttons">
-            <tr>
-                <td>home</td>
-                <td>shop</td>
-                <td>about</td>
-                <td>contact</td>
-            </tr>
-        </table>
-    </div> -->
-    <p id="now-playing"></p>
-    <div id="bottom-text">
-        <p id="ver">Ver. 0.3.0</p>
-        <p id="copyright">&copy; 2024 Pooka, All rights reserved.</p>
+                    <td>
+                        <div id="clock">
+                            <div id="hour"><div id="hour-hand"></div></div>
+                            <div id="minute"><div id="minute-hand"></div></div>
+                        </div>
+                        <div id="time"></div>
+                    </td>
+                    <td>
+                        <a href="info.html" target="_blank"><div id="info">ⓘ<p id="about">about</p></div></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- <div id="navbar">
+            <table class="buttons">
+                <tr>
+                    <td>home</td>
+                    <td>shop</td>
+                    <td>about</td>
+                    <td>contact</td>
+                </tr>
+            </table>
+        </div> -->
+        <div id="nowplaying-container" style="display: none">
+            <div id="nowplaying-icon"><img src="assets/nowplaying.png"></div>
+            <div id="nowplaying-bar"><p id="nowplaying">Music Selector</p></div>
+        </div>
+        <div id="bottom-text">
+            <p id="ver">Ver. 0.4.0</p>
+            <p id="copyright">&copy; 2024 Pooka, All rights reserved.</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
