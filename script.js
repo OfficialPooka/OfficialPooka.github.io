@@ -1,23 +1,23 @@
 enter = document.getElementById("enter");
 var click = new Audio("assets/click-2.wav");
 var loaded = 0;
-var nowPlaying = document.getElementById("now-playing");
+var nowPlaying = document.getElementById("nowplaying");
 
-const songs = ["SEX JAZZ v2.mp3", "1324.mp3", "1230 20XX [pooka].mp3"];
+const songs = ["@okpooka - 20XX 125 bpm", "@okpooka - cuddle team leader 130 bpm F min +50 cents", "@okpooka - wake up 140 bpm B min", "@okpooka @hiiidrax - doll 149 bpm", "@okpooka @iamsynthetic - monkey ball 132 bpm C# maj", "@okpooka @sn.aywhat - koe 138 bpm", "@okpooka @vvspipes - perfection 128 bpm D# min", "852 starbust [pooka]", "993 the light [pooka] beat", "1356_shark_tooth_pooka", "hiiidrax_x_okpooka_-_muffin_114bpm", "MORRIS + POOKA - FRUITIVADED 147 BPM", "morris + vvspipes + pooka - droptop 129", "pooka + kimj - my try 141 bpm C min -50 cents", "snow in april 153 @breezefore x @okpooka", "supa + pooka - iThink"];
 var songIndex = Math.floor(Math.random() * songs.length);
-const music = new Audio("assets/music/" + songs[songIndex]);
+const music = new Audio("assets/music/" + songs[songIndex] + ".mp3");
 
 function displayNowPlaying() {
-    nowPlaying.textContent = "Now Playing - " + songs[songIndex];
-    nowPlaying.style.animation = "now-playing";
-    nowPlaying.style.animationDuration = "5s";
-    nowPlaying.style.animationFillMode = "forwards";
+    nowPlaying.textContent = "Now Playing: " + songs[songIndex];
+    //nowPlaying.style.animation = "nowplaying"; it used to fade out
+    //nowPlaying.style.animationDuration = "5s";
+    //nowPlaying.style.animationFillMode = "forwards";
 };
 
 function playSong() {
     console.log(music);
     console.log("Now Playing - " + songs[songIndex])
-    music.play();
+    //music.play();
     displayNowPlaying();
 };
 
@@ -37,16 +37,16 @@ enter.onclick = function loadshit() {
         click.play();
         
         // move shit into frame
-        // document.getElementById("navbar").style.bottom = 0;
+        document.getElementById("header").style.top = 0;
 
         // move shit out of frame 
         document.getElementById("title").style.top = "-25%";
         document.getElementById("title-bg").style.top = "-25%";
         document.getElementById("bottom-text").style.bottom = "-25%";
 
-        
+        playSong();
         loaded++;   
-        console.log(loaded);
+        //console.log(loaded);
     }
 };
 
@@ -84,8 +84,8 @@ i = 0
 
 function rotateTest() {
     i++
-        hour.style.transform = `rotate(${i*2}deg)`; 
-        minute.style.transform = `rotate(${i*3}deg)`;
+        hour.style.transform = `rotate(${i/5}deg)`; 
+        minute.style.transform = `rotate(${i/2}deg)`;
     setTimeout(rotateTest, 10);
 }
 
