@@ -190,3 +190,69 @@ div.buy-button:active p {
 img {
     width: 100%;
 }
+
+@media only screen and (max-width: 920px) {
+    body {
+        overflow-y: visible;
+    }
+
+    div.main {
+        display: block;
+    }
+
+    div.preview-container {
+        width: 74vw;
+        margin: 8vh 13vw 5vh 13vw;
+        opacity: 1;
+        animation: none;
+    }
+
+    div.product-info {
+        margin: 0;
+    }
+    
+    div.product-info-container {
+        display: block;
+    }
+
+    div.product-title {
+        flex: none;
+        margin-left: 13vw;
+    }
+
+    div.product-desc {
+        flex: none;
+        margin: 30px 13vw 10px 13vw;
+        opacity: 1;
+        animation: none;
+    }
+    
+    h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        margin: 3px 3px 20px 15vw;
+    }
+
+    input.buy {
+        height: 40px;
+        width: 50vw;
+    }
+
+    div.buy-button {
+        height: 40px;
+        width: 50vw;
+        margin: 40px 12vw 0 12vw;
+        border-radius: 20px;
+    }
+
+    div.buy-button p {
+        font-size: 20px;
+        position: absolute;
+        margin: 10px 0px 10px 1px;
+        width: 50vw;
+        text-align: center;
+    }
+}
